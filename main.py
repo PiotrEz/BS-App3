@@ -28,4 +28,4 @@ def test_GET():
 def connection(IP_ADDRES,PORT_REDIS):
     return r.dbsize()
 
-app.run(port=APP_PORT)
+app.run(host='0.0.0.0',port=APP_PORT)
